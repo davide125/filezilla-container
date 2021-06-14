@@ -1,4 +1,4 @@
-# FileZilla 3.39 container with deprecated cyphers support
+# FileZilla 3.39 container with deprecated cyphers
 
 Minimal container with
 [FileZilla 3.39](https://packages.debian.org/buster/filezilla),
@@ -11,6 +11,6 @@ The easiest way to use this is probably with
 [x11docker](https://github.com/mviereck/x11docker):
 
 ```
-$ podman build -t filezilla https://github.com/davide125/filezilla-container
+$ podman build -t filezilla git://github.com/davide125/filezilla-container
 $ x11docker --backend=podman --pull=no -m --share=$HOME/Downloads filezilla
 ```
